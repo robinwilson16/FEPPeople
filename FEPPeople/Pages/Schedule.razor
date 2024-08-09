@@ -1,0 +1,265 @@
+﻿@page "/Schedule"
+
+@using FEPPeople.Models
+@using FEPPeople.Services
+@using System.Net
+@using Microsoft.AspNetCore.Components.QuickGrid
+
+@inject ILogger<Person> Logger
+@inject HttpClient Http
+@inject IConfiguration configuration
+@inject AppData appData
+
+<Modal @ref="modalError">
+    <Title><i class="fa-solid fa-triangle-exclamation"></i> @msgErrorTitle</Title>
+    <Body>
+        <p>
+            @msgError
+        </p>
+    </Body>
+    <Footer>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" @onclick="() => modalError!.Close()">Close</button>
+    </Footer>
+</Modal>
+
+<Modal @ref="modalPerson">
+    <Title><i class="fa-solid fa-triangle-exclamation"></i> @msgPersonTitle</Title>
+    <Body>
+        <p>
+            @msgPerson
+        </p>
+    </Body>
+    <Footer>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" @onclick="() => modalPerson!.Close()">Close</button>
+    </Footer>
+</Modal>
+
+<h3><i class="fa-solid fa-calendar-days"></i> Schedule from @dateFrom.ToString("ddd dd MMM yy") to @dateTo.ToString("ddd dd MMM yy")</h3>
+
+@if (People == null) {
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <h1 class="text-center p-5"><i class="fa-solid fa-spinner fa-spin"></i></h1>
+            </div>
+        </div>
+    </div>
+}
+else {
+    <div class="table-responsive">
+        <QuickGrid Items="@PeopleIQ" Pagination="@pagination" Class="table table-striped table-hover table-bordered">
+            <TemplateColumn Title="">
+                <button type="button" class="btn btn-primary btn-sm" @onclick="()=>EditPerson(context.PersonID)"><i class="fa-solid fa-up-right-from-square"></i></button>
+            </TemplateColumn>
+            <PropertyColumn Property="@(p => p.Forename)" Sortable="true">
+                <ColumnOptions>
+                    <div class="search-box">
+                        <input type="search" class="form-control" autofocus @bind="forenameFilter" @bind:event="oninput" placeholder="Forename..." />
+                    </div>
+                </ColumnOptions>
+            </PropertyColumn>
+            <PropertyColumn Property="@(p => p.Surname)" Sortable="true">
+                <ColumnOptions>
+                    <div class="search-box">
+                        <input type="search" class="form-control" autofocus @bind="surnameFilter" @bind:event="oninput" placeholder="Surname..." />
+                    </div>
+                </ColumnOptions>
+            </PropertyColumn>
+            <TemplateColumn Title="Reporting" class="Specialism text-nowrap">
+                <kbd class="Reporting ProSolution">ProSolution</kbd><kbd class="Reporting EBS">EBS</kbd><kbd class="Reporting Unite">UNIT-e</kbd>
+            </TemplateColumn>
+            <TemplateColumn Title="Funding" class="Specialism text-nowrap">
+                <kbd class="Funding">Funding</kbd>
+            </TemplateColumn>
+            <TemplateColumn Title="Curriculum" class="Specialism text-nowrap">
+                <kbd class="Curriculum">Curriculum</kbd>
+            </TemplateColumn>
+            <TemplateColumn Title="Senior Mgr" class="Specialism text-nowrap">
+                <kbd class="SeniorMgr">Senior Mgr</kbd>
+            </TemplateColumn>
+            @if (eachDay != null)
+            {
+                @foreach (DateTime day in eachDay)
+                {
+                    <TemplateColumn Title="@day.ToString("ddd dd MMM yy")" Class="AvailabilityDay">
+                        @{
+                            // Person? currentPerson = People.Where(person => person.PersonID == context.PersonID).FirstOrDefault();
+                            bool isBooked = false;
+
+                            if (context!.Contract != null)
+                            {
+                                foreach (var contract in context!.Contract)
+                                {
+                                    if (contract.StartDate <= day && contract.EndDate >= day)
+                                    {
+                                        if (contract.ContractDay != null)
+                                        {
+                                            if (contract.ContractDay.Any(c => c.DayID == (int)day.DayOfWeek))
+                                            {
+                                                isBooked = true;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            if (day.DayOfWeek == DayOfWeek.Monday)
+                            {
+                                <span class="NewWeek"></span>
+                            }
+
+                            if (isBooked == true)
+                            {
+                                <span class="Y"></span>
+                            }
+                            else
+                            {
+                                if (day.DayOfWeek == DayOfWeek.Saturday || day.DayOfWeek == DayOfWeek.Sunday)
+                                {
+                                    <span class="Weekend"></span>
+                                }
+                                else
+                                {
+                                    <span class="N"></span>
+                                }
+                            }
+                        }
+                        &nbsp;
+                    </TemplateColumn>
+                }
+            }
+        </QuickGrid>
+    </div>
+
+    <Paginator State="@pagination" />
+}
+
+
+@code {
+    private List<Person>? People { get; set; }
+    private IQueryable<Person>? PeopleIQ { get; set; }
+    PaginationState pagination = new PaginationState { ItemsPerPage = 15 };
+    string forenameFilter = string.Empty;
+    string surnameFilter = string.Empty;
+
+    private Person? Person { get; set; }
+
+    private string? endpoint;
+    private string? endpointPerson;
+    private string? endpointPersonTypes;
+
+    bool hasError = false;
+
+    public string? msgErrorTitle = null;
+    public string? msgError = null;
+    private Modal? modalError { get; set; }
+
+    public string? msgConfirmTitle = null;
+    public string? msgConfirm = null;
+    private Modal? modalConfirm { get; set; }
+
+    public string? msgCompleteTitle = null;
+    public string? msgComplete = null;
+    private Modal? modalComplete { get; set; }
+
+    public string? msgPersonTitle = null;
+    public string? msgPerson = null;
+    private Modal? modalPerson { get; set; }
+
+    DateTime dateFrom = DateTime.Today;
+    DateTime dateTo = DateTime.Today.AddDays(30);
+    DateTime dateCurrent = DateTime.Today;
+
+    IEnumerable<DateTime>? eachDay;
+
+    protected override async Task OnInitializedAsync()
+    {
+        endpoint = $"{configuration["APIEndpoint"]}/Person";
+        dateCurrent = DateTime.Today;
+        eachDay = EachDay(dateFrom, dateTo);
+
+        try
+        {
+            Http.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", appData.User?.AccessToken);
+            People = await Http.GetFromJsonAsync<List<Person>>(endpoint);
+        }
+        catch (HttpRequestException ex)
+        {
+            endpointException(ex, null);
+        }
+
+        if(People != null)
+        {
+            PeopleIQ = (People)?.AsQueryable().Where(x => x.Forename!.Contains(forenameFilter, StringComparison.CurrentCultureIgnoreCase) && x.Surname!.Contains(surnameFilter, StringComparison.CurrentCultureIgnoreCase));
+        }
+
+    }
+
+    public static IEnumerable<DateTime> EachDay(DateTime from, DateTime thru)
+    {
+        for (var day = from.Date; day.Date <= thru.Date; day = day.AddDays(1))
+            yield return day;
+    }
+
+    private async Task EditPerson(int personID)
+    {
+        msgPersonTitle = $"Person {personID}";
+        msgPerson = $"Record for person";
+        modalPerson!.MakeLarge();
+        modalPerson!.Open();
+
+        endpointPerson = $"{configuration["APIEndpoint"]}/Person/{personID}";
+
+        try
+        {
+            Http.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", appData.User?.AccessToken);
+            Person = await Http.GetFromJsonAsync<Person>(endpointPerson);
+        }
+        catch (HttpRequestException ex)
+        {
+            endpointException(ex, null);
+        }
+    }
+
+    private void endpointException(Exception ex, int? recordID)
+    {
+        if (ex.Message.Contains("The input does not contain any JSON tokens"))
+        {
+            //This is valid and the API returns 204 No Content which is eroneously logged as an error when it is not
+        }
+        else
+        {
+            hasError = true;
+            modalError!.Open();
+            msgErrorTitle = $"Error Occurred";
+
+            if (ex.Message.Contains(HttpStatusCode.Unauthorized.ToString()))
+            {
+                msgError = $"You are not authorised to view this page";
+            }
+            else if (ex.Message.Contains("404 (Not Found)"))
+            {
+                if (recordID != null)
+                {
+                    msgError = $"The record \"{recordID}\" requested does not exist";
+                }
+                else
+                {
+                    msgError = $"The record does not exist";
+                }
+            }
+            else if (ex.Message.Contains("400 (Bad Request)"))
+            {
+                if (recordID != null)
+                {
+                    msgError = $"The record \"{recordID}\" requested is invalid";
+                }
+                else
+                {
+                    msgError = $"The record does not exist";
+                }
+            }
+            else msgError = $"Error: {ex.Message}";
+        }
+    }
+}

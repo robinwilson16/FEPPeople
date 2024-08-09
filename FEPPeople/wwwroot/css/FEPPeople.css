@@ -1,0 +1,61 @@
+﻿body {
+}
+
+.AvailabilityDay:not(td) {
+    writing-mode: vertical-lr;
+    vertical-align: middle;
+    font-size: 0.8em;
+    max-width: 30px
+}
+
+.AvailabilityDay {
+    text-align: center;
+}
+
+.AvailabilityDay:has(span.Y) {
+    background-color: #4caf50;
+}
+
+.AvailabilityDay:has(span.N) {
+    background-color: #e0e0e0;
+}
+
+.AvailabilityDay:has(span.Weekend) {
+    background-color: #9e9e9e;
+}
+
+.AvailabilityDay:has(span.NewWeek) {
+    border-left: 2px solid #FFFFFF;
+}
+
+.Specialism kbd {
+    margin-right: 2px;
+}
+
+.Specialism .Reporting {
+    background-color: #9c27b0;
+}
+
+.Specialism .ProSolution {
+    background-color: #9c27b0;
+}
+
+.Specialism .EBS {
+    background-color: #e91e63;
+}
+
+.Specialism .Unite {
+    background-color: #3f51b5;
+}
+
+.Specialism .Funding {
+    background-color: #00bcd4;
+}
+
+.Specialism .Curriculum {
+    background-color: #ff9800;
+}
+
+.Specialism .SeniorMgr {
+    background-color: #607d8b;
+}

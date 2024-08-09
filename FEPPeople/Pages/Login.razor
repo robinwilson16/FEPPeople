@@ -1,0 +1,353 @@
+﻿@page "/Login/{actionID}/{userID:int}"
+@page "/Login/{actionID}"
+
+@using FEPPeople.Models
+@using FEPPeople.Services
+@using System.Net
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+
+@inject ILogger<User> Logger
+@inject HttpClient Http
+@inject IConfiguration configuration
+@inject AppData appData
+
+<Modal @ref="modalError">
+    <Title><i class="fa-solid fa-triangle-exclamation"></i> @msgErrorTitle</Title>
+    <Body>
+        <p>
+            @msgError
+        </p>
+    </Body>
+    <Footer>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" @onclick="() => modalError!.Close()">Close</button>
+    </Footer>
+</Modal>
+
+<Modal @ref="modalConfirm">
+    <Title><i class="fa-solid fa-circle-question"></i> @msgConfirmTitle</Title>
+    <Body>
+        <p>
+            @msgConfirm
+        </p>
+    </Body>
+    <Footer>
+        <button type="button" class="btn btn-danger" @onclick="Delete"><i class="fa-solid fa-trash"></i> Yes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" @onclick="() => modalConfirm!.Close()"><i class="fa-solid fa-right-from-bracket"></i> Cancel</button>
+    </Footer>
+</Modal>
+
+<Modal @ref="modalComplete">
+    <Title><i class="fa-solid fa-circle-info"></i> @msgCompleteTitle</Title>
+    <Body>
+        <p>
+            @msgComplete
+        </p>
+    </Body>
+    <Footer>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" @onclick="() => modalComplete!.Close()"><i class="fa-solid fa-circle-xmark"></i> Close</button>
+    </Footer>
+</Modal>
+
+@if (actionID != "Create" && actionID != "Edit" && actionID != "Delete")
+{
+    <div class="alert alert-warning" role="alert">
+        <h4 class="alert-heading"><i class="fa-solid fa-signs-post"></i> Invalid Action Detected</h4>
+        <p>Sorry this action is not valid.</p>
+        <hr>
+        <p class="mb-0">Please go back and try again.</p>
+    </div>
+
+    hasError = true;
+}
+else if ((actionID == "Edit" || actionID == "Delete") && userID <= 0)
+{
+    <div class="alert alert-warning" role="alert">
+        <h4 class="alert-heading"><i class="fa-solid fa-signs-post"></i> User ID Required But Was Not Supplied</h4>
+        <p>The user id is required for update and delete operations but it was not supplied.</p>
+        <hr>
+        <p class="mb-0">Please go back and try again.</p>
+    </div>
+
+    hasError = true;
+}
+else
+{
+    <h1>Token: @appData.User?.AccessToken</h1>
+    <EditForm Model="@User" OnValidSubmit="Submit">
+        <DataAnnotationsValidator />
+        <fieldset enabled>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="bd-callout">
+                            <h4><i class="@iconHeader"></i> @actionID Person</h4>
+
+                            <div class="mb-3 row">
+                                <div class="alert alert-primary" role="alert">
+                                    <i class="fa-solid fa-circle-info"></i> Fields in bold are mandatory
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <label for="Person.Surname" class="col-xl-3 col-lg-4 col-md-5 form-label fw-bold col-form-label">User ID</label>
+                                <div class="col-xl-9 col-lg-8 col-md-7">
+                                    <InputNumber @bind-Value="User!.UserID" class="form-control" />
+                                    <ValidationMessage For="() => User.UserID" />
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <label for="Person.Forename" class="col-xl-3 col-lg-4 col-md-5 form-label fw-bold col-form-label">Email</label>
+                                <div class="col-xl-9 col-lg-8 col-md-7">
+                                    <InputText @bind-Value="User!.Email" class="form-control" />
+                                    <ValidationMessage For="() => User.Email" />
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <label for="Person.Surname" class="col-xl-3 col-lg-4 col-md-5 form-label fw-bold col-form-label">Password</label>
+                                <div class="col-xl-9 col-lg-8 col-md-7">
+                                    <InputText @bind-Value="User!.Password" class="form-control" />
+                                    <ValidationMessage For="() => User.Password" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <ValidationSummary />
+
+                <div class="row">
+                    <div class="col-md">
+                        <div class="alert alert-secondary" role="alert">
+                            <div class="row gap-3">
+                                <div class="col-md">
+                                </div>
+                                <div class="col-md text-end">
+                                    <span class="d-grid gap-2 d-md-block">
+                                        @if(actionID == "Create")
+                                        {
+                                            <button class="btn btn-primary" type="submit"><i class="fa-solid fa-square-plus"></i> Add</button>
+                                        }
+                                        else if (actionID == "Edit")
+                                        {
+                                            <button class="btn btn-danger" type="submit" @onclick="SetActionDelete"><i class="fa-solid fa-trash"></i> Delete</button>
+                                            <button class="btn btn-success" type="submit"><i class="fa-solid fa-pen"></i> Save</button>
+                                        }
+                                        else if(actionID == "Delete")
+                                        {
+                                            <button class="btn btn-danger" type="submit"><i class="fa-solid fa-trash"></i> Delete</button>
+                                        }
+                                        else
+                                        {
+                                            <button class="btn btn-primary" type="submit"><i class="fa-solid fa-trash"></i> Save</button>
+                                        }
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </EditForm>
+}
+
+@code {
+    [Parameter]
+    public string? actionID { get; set; }
+    [Parameter]
+    public int? userID { get; set; }
+
+    public string? actionIDOverride { get; set; }
+
+    [SupplyParameterFromForm]
+    public User? User { get; set; }
+    public User? LoggedInUser { get; set; }
+
+    public string? defaultSelectOption;
+    private string? endpoint;
+
+    public string? iconHeader;
+
+    bool hasError = false;
+
+    public string? msgErrorTitle = null;
+    public string? msgError = null;
+    private Modal? modalError { get; set; }
+
+    public string? msgConfirmTitle = null;
+    public string? msgConfirm = null;
+    private Modal? modalConfirm { get; set; }
+
+    public string? msgCompleteTitle = null;
+    public string? msgComplete = null;
+    private Modal? modalComplete { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        appData.OnChange += StateHasChanged;
+
+        switch(actionID)
+        {
+            case "Create":
+                iconHeader = $"fa-solid fa-user-plus me-3";
+                break;
+            case "Edit":
+                iconHeader = $"fa-solid fa-user-pen me-3";
+                break;
+            case "Delete":
+                iconHeader = $"fa-solid fa-user-minus me-3";
+                break;
+        }
+
+        if (actionID == "Edit" || actionID == "Delete")
+        {
+            endpoint = $"{configuration["APIEndpoint"]}/User/login/{userID}?useCookies=false&useSessionCookies=false";
+        }
+        else
+        {
+            endpoint = $"{configuration["APIEndpoint"]}/User/login?useCookies=false&useSessionCookies=false";
+            defaultSelectOption = "selected";
+        }
+
+        User ??= new();
+        userID ??= 0;
+
+        try
+        {
+            if ((actionID == "Edit" || actionID == "Delete") && hasError != true)
+            {
+                User = await Http.GetFromJsonAsync<User>(endpoint);
+            }
+
+        }
+        catch (HttpRequestException ex)
+        {
+            endpointException(ex, userID);
+        }
+    }
+
+    private void SetActionDelete()
+    {
+        actionIDOverride = "Delete";
+    }
+
+    private async Task Submit()
+    {
+        if (actionID == "Delete" || actionIDOverride == "Delete")
+        {
+            msgConfirmTitle = $"Delete User?";
+            msgConfirm = $"Are you sure you want to delete the user \"{User!.Email} ({User!.UserID})\"";
+            msgCompleteTitle = $"User Deleted";
+            msgComplete = $"The user \"{User!.Email} ({User!.UserID})\" was successfully deleted";
+
+            if (hasError == false)
+            {
+                modalConfirm!.Open();
+            }
+            else
+            {
+                modalError!.Open();
+            }
+        }
+        else
+        {
+            try
+            {
+                if (actionID == "Edit")
+                {
+                    Logger.LogInformation("UserID = {UserID}", User?.UserID);
+                    await Http.PutAsJsonAsync(endpoint, User);
+
+                    msgCompleteTitle = $"User Updated";
+                    msgComplete = $"The user \"{User!.Email}  ({User!.UserID})\" was successfully updated";
+                }
+                else
+                {
+                    Logger.LogInformation("UserID = {UserID}", User?.UserID);
+                    HttpResponseMessage response = await Http.PostAsJsonAsync(endpoint, User);
+
+                    LoggedInUser = await response.Content.ReadAsAsync<User>();
+                    LoggedInUser.Email = User?.Email;
+                    appData.User = LoggedInUser;
+
+                    msgCompleteTitle = $"User Added";
+                    msgComplete = $"The user \"{User!.Email} ({User!.UserID})\" was successfully logged in";
+                }
+            }
+            catch (Exception ex)
+            {
+                endpointException(ex, userID);
+            }
+
+            if (hasError == false)
+            {
+                modalComplete!.Open();
+            }
+        }
+    }
+
+    private async Task Delete()
+    {
+        modalConfirm!.Close();
+
+        try
+        {
+            Logger.LogInformation("UserID = {UserID}", User?.UserID);
+            await Http.DeleteFromJsonAsync<int>(endpoint);
+        }
+        catch (Exception ex)
+        {
+            endpointException(ex, userID);
+        }
+
+        if (hasError == false)
+        {
+            modalComplete!.Open();
+        }
+    }
+
+    private void endpointException(Exception ex, int? recordID)
+    {
+        if (ex.Message.Contains("The input does not contain any JSON tokens"))
+        {
+            //This is valid and the API returns 204 No Content which is eroneously logged as an error when it is not
+        }
+        else
+        {
+            hasError = true;
+            modalError!.Open();
+            msgErrorTitle = $"Error Occurred";
+
+            if (ex.Message.Contains(HttpStatusCode.Unauthorized.ToString()))
+            {
+                msgError = $"You are not authorised to view this page";
+            }
+            else if (ex.Message.Contains("404 (Not Found)"))
+            {
+                if(recordID != null)
+                {
+                    msgError = $"The record \"{recordID}\" requested does not exist";
+                }
+                else
+                {
+                    msgError = $"The record does not exist";
+                }
+            }
+            else if (ex.Message.Contains("400 (Bad Request)"))
+            {
+                if (recordID != null)
+                {
+                    msgError = $"The record \"{recordID}\" requested is invalid";
+                }
+                else
+                {
+                    msgError = $"The record does not exist";
+                }
+            }
+            else msgError = $"Error: {ex.Message}";
+        }
+    }
+}

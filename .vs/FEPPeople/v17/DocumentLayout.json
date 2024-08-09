@@ -1,0 +1,662 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\models\\contractday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\models\\contractday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\models\\contract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\models\\contract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\pages\\schedule.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\pages\\schedule.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\pages\\modal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\pages\\modal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\pages\\people.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\pages\\people.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\layout\\logindisplay.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\layout\\logindisplay.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\services\\appdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\services\\appdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\pages\\authentication.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\pages\\authentication.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\models\\organisation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\models\\organisation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\models\\leadspecialism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\models\\leadspecialism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\models\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\models\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\wwwroot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\wwwroot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\libman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\libman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\wwwroot\\manifest.webmanifest||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\wwwroot\\manifest.webmanifest||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\models\\holiday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\models\\holiday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\models\\leadday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\models\\leadday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\models\\personavailability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\models\\personavailability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\wwwroot\\css\\feppeople.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\wwwroot\\css\\feppeople.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\models\\specialism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\models\\specialism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\models\\persontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\models\\persontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\models\\personspecialism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\models\\personspecialism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\models\\organisationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\models\\organisationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\models\\organisationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\models\\organisationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\models\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\models\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\models\\lead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\models\\lead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|c:\\users\\robin.wilson\\source\\repos\\feppeople\\feppeople\\feppeople.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{132EC423-4213-47C3-9F68-0C90E7AE3BFA}|FEPPeople\\FEPPeople.csproj|solutionrelative:feppeople\\feppeople.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "People.razor",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Pages\\People.razor",
+              "RelativeDocumentMoniker": "FEPPeople\\Pages\\People.razor",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Pages\\People.razor",
+              "RelativeToolTip": "FEPPeople\\Pages\\People.razor",
+              "ViewState": "AQIAABkBAAAAAAAAAAAAACoBAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-11T23:03:23.142Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LeadSpecialism.cs",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\LeadSpecialism.cs",
+              "RelativeDocumentMoniker": "FEPPeople\\Models\\LeadSpecialism.cs",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\LeadSpecialism.cs",
+              "RelativeToolTip": "FEPPeople\\Models\\LeadSpecialism.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T18:09:57.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Organisation.cs",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\Organisation.cs",
+              "RelativeDocumentMoniker": "FEPPeople\\Models\\Organisation.cs",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\Organisation.cs",
+              "RelativeToolTip": "FEPPeople\\Models\\Organisation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T18:10:06.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Program.cs",
+              "RelativeDocumentMoniker": "FEPPeople\\Program.cs",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Program.cs",
+              "RelativeToolTip": "FEPPeople\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T23:29:44.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "FEPPeople\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Pages\\Home.razor",
+              "RelativeToolTip": "FEPPeople\\Pages\\Home.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-15T22:46:24.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Modal.razor",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Pages\\Modal.razor",
+              "RelativeDocumentMoniker": "FEPPeople\\Pages\\Modal.razor",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Pages\\Modal.razor",
+              "RelativeToolTip": "FEPPeople\\Pages\\Modal.razor",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-11T20:14:18.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Contract.cs",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\Contract.cs",
+              "RelativeDocumentMoniker": "FEPPeople\\Models\\Contract.cs",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\Contract.cs",
+              "RelativeToolTip": "FEPPeople\\Models\\Contract.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T18:09:33.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContractDay.cs",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\ContractDay.cs",
+              "RelativeDocumentMoniker": "FEPPeople\\Models\\ContractDay.cs",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\ContractDay.cs",
+              "RelativeToolTip": "FEPPeople\\Models\\ContractDay.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T18:09:41.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\Person.cs",
+              "RelativeDocumentMoniker": "FEPPeople\\Models\\Person.cs",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\Person.cs",
+              "RelativeToolTip": "FEPPeople\\Models\\Person.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T23:11:22.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AppData.cs",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Services\\AppData.cs",
+              "RelativeDocumentMoniker": "FEPPeople\\Services\\AppData.cs",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Services\\AppData.cs",
+              "RelativeToolTip": "FEPPeople\\Services\\AppData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T19:33:32.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginDisplay.razor",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Layout\\LoginDisplay.razor",
+              "RelativeDocumentMoniker": "FEPPeople\\Layout\\LoginDisplay.razor",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Layout\\LoginDisplay.razor",
+              "RelativeToolTip": "FEPPeople\\Layout\\LoginDisplay.razor",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACcAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T22:23:23.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Schedule.razor",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Pages\\Schedule.razor",
+              "RelativeDocumentMoniker": "FEPPeople\\Pages\\Schedule.razor",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Pages\\Schedule.razor",
+              "RelativeToolTip": "FEPPeople\\Pages\\Schedule.razor",
+              "ViewState": "AQIAAMUAAAAAAAAAAAAAANAAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T16:45:51.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "FEPPeople\\Pages\\Login.razor",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Pages\\Login.razor",
+              "RelativeToolTip": "FEPPeople\\Pages\\Login.razor",
+              "ViewState": "AQIAAE0BAAAAAAAAAAAUwNIAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T23:54:42.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\User.cs",
+              "RelativeDocumentMoniker": "FEPPeople\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\User.cs",
+              "RelativeToolTip": "FEPPeople\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T23:55:04.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "FEPPeople\\Pages\\Counter.razor",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Pages\\Counter.razor",
+              "RelativeToolTip": "FEPPeople\\Pages\\Counter.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-15T23:59:29.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "FEPPeople\\Models\\LoginResponse.cs",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\LoginResponse.cs",
+              "RelativeToolTip": "FEPPeople\\Models\\LoginResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T12:14:07.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Authentication.razor",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Pages\\Authentication.razor",
+              "RelativeDocumentMoniker": "FEPPeople\\Pages\\Authentication.razor",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Pages\\Authentication.razor",
+              "RelativeToolTip": "FEPPeople\\Pages\\Authentication.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T21:41:45.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MainLayout.razor.css",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Layout\\MainLayout.razor.css",
+              "RelativeDocumentMoniker": "FEPPeople\\Layout\\MainLayout.razor.css",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Layout\\MainLayout.razor.css",
+              "RelativeToolTip": "FEPPeople\\Layout\\MainLayout.razor.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-10T23:32:52.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\App.razor",
+              "RelativeDocumentMoniker": "FEPPeople\\App.razor",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\App.razor",
+              "RelativeToolTip": "FEPPeople\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T23:30:58.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "libman.json",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\libman.json",
+              "RelativeDocumentMoniker": "FEPPeople\\libman.json",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\libman.json",
+              "RelativeToolTip": "FEPPeople\\libman.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-10T22:34:42.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "NavMenu.razor.css",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Layout\\NavMenu.razor.css",
+              "RelativeDocumentMoniker": "FEPPeople\\Layout\\NavMenu.razor.css",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Layout\\NavMenu.razor.css",
+              "RelativeToolTip": "FEPPeople\\Layout\\NavMenu.razor.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-15T22:27:57.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "FEPPeople\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "FEPPeople\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T22:53:07.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\_Imports.razor",
+              "RelativeDocumentMoniker": "FEPPeople\\_Imports.razor",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\_Imports.razor",
+              "RelativeToolTip": "FEPPeople\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T23:31:51.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "FEPPeople\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\wwwroot\\index.html",
+              "RelativeToolTip": "FEPPeople\\wwwroot\\index.html",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABoAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-06-10T22:41:30.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "manifest.webmanifest",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\wwwroot\\manifest.webmanifest",
+              "RelativeDocumentMoniker": "FEPPeople\\wwwroot\\manifest.webmanifest",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\wwwroot\\manifest.webmanifest",
+              "RelativeToolTip": "FEPPeople\\wwwroot\\manifest.webmanifest",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-14T21:44:17.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\wwwroot\\appsettings.json",
+              "RelativeDocumentMoniker": "FEPPeople\\wwwroot\\appsettings.json",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\wwwroot\\appsettings.json",
+              "RelativeToolTip": "FEPPeople\\wwwroot\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-11T01:29:05.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "FEPPeople\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Properties\\launchSettings.json",
+              "RelativeToolTip": "FEPPeople\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-14T21:43:50.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Holiday.cs",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\Holiday.cs",
+              "RelativeDocumentMoniker": "FEPPeople\\Models\\Holiday.cs",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\Holiday.cs",
+              "RelativeToolTip": "FEPPeople\\Models\\Holiday.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T14:46:15.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LeadDay.cs",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\LeadDay.cs",
+              "RelativeDocumentMoniker": "FEPPeople\\Models\\LeadDay.cs",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\LeadDay.cs",
+              "RelativeToolTip": "FEPPeople\\Models\\LeadDay.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T18:09:52.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "PersonAvailability.cs",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\PersonAvailability.cs",
+              "RelativeDocumentMoniker": "FEPPeople\\Models\\PersonAvailability.cs",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\PersonAvailability.cs",
+              "RelativeToolTip": "FEPPeople\\Models\\PersonAvailability.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T18:10:23.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "FEPPeople.css",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\wwwroot\\css\\FEPPeople.css",
+              "RelativeDocumentMoniker": "FEPPeople\\wwwroot\\css\\FEPPeople.css",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\wwwroot\\css\\FEPPeople.css",
+              "RelativeToolTip": "FEPPeople\\wwwroot\\css\\FEPPeople.css",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAqwBMAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-13T22:40:14.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "PersonType.cs",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\PersonType.cs",
+              "RelativeDocumentMoniker": "FEPPeople\\Models\\PersonType.cs",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\PersonType.cs",
+              "RelativeToolTip": "FEPPeople\\Models\\PersonType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T18:10:30.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Specialism.cs",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\Specialism.cs",
+              "RelativeDocumentMoniker": "FEPPeople\\Models\\Specialism.cs",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\Specialism.cs",
+              "RelativeToolTip": "FEPPeople\\Models\\Specialism.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T18:10:34.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "PersonSpecialism.cs",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\PersonSpecialism.cs",
+              "RelativeDocumentMoniker": "FEPPeople\\Models\\PersonSpecialism.cs",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\PersonSpecialism.cs",
+              "RelativeToolTip": "FEPPeople\\Models\\PersonSpecialism.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T18:10:26.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "OrganisationType.cs",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\OrganisationType.cs",
+              "RelativeDocumentMoniker": "FEPPeople\\Models\\OrganisationType.cs",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\OrganisationType.cs",
+              "RelativeToolTip": "FEPPeople\\Models\\OrganisationType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T18:10:15.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "OrganisationStatus.cs",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\OrganisationStatus.cs",
+              "RelativeDocumentMoniker": "FEPPeople\\Models\\OrganisationStatus.cs",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\OrganisationStatus.cs",
+              "RelativeToolTip": "FEPPeople\\Models\\OrganisationStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T18:10:10.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Note.cs",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\Note.cs",
+              "RelativeDocumentMoniker": "FEPPeople\\Models\\Note.cs",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\Note.cs",
+              "RelativeToolTip": "FEPPeople\\Models\\Note.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T18:10:01.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Lead.cs",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\Lead.cs",
+              "RelativeDocumentMoniker": "FEPPeople\\Models\\Lead.cs",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Models\\Lead.cs",
+              "RelativeToolTip": "FEPPeople\\Models\\Lead.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T18:09:47.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "FEPPeople\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "FEPPeople\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T23:32:46.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "FEPPeople.csproj",
+              "DocumentMoniker": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\FEPPeople.csproj",
+              "RelativeDocumentMoniker": "FEPPeople\\FEPPeople.csproj",
+              "ToolTip": "C:\\Users\\robin.wilson\\source\\repos\\FEPPeople\\FEPPeople\\FEPPeople.csproj",
+              "RelativeToolTip": "FEPPeople\\FEPPeople.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-10T22:34:25.498Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

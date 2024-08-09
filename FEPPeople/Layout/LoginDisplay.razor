@@ -1,0 +1,42 @@
+﻿@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using FEPPeople.Models
+@using FEPPeople.Services
+
+@inject NavigationManager Navigation
+@inject AppData appData
+
+@if(appData.User?.AccessToken != null)
+{
+    <span>
+        Hello, @appData.User?.Email!
+        <button class="nav-link btn btn-link" @onclick="BeginLogOut">Log out</button>
+    </span>
+}
+else
+{
+    <span>
+        <a href="authentication/login">Log in</a>
+    </span>
+}
+
+@* <AuthorizeView>
+    <Authorized>
+        Hello, @context.User.Identity?.Name!
+        <button class="nav-link btn btn-link" @onclick="BeginLogOut">Log out</button>
+    </Authorized>
+    <NotAuthorized>
+        <a href="authentication/login">Log in</a>
+    </NotAuthorized>
+</AuthorizeView> *@
+
+@code{
+    public void BeginLogOut()
+    {
+        Navigation.NavigateToLogout("authentication/logout");
+    }
+
+    protected override void OnInitialized()
+    {
+        appData.OnChange += StateHasChanged;
+    }
+}
